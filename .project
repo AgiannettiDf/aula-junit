@@ -14,4 +14,11 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>Bootcamp Spring React - Capítulo 02.pdf</name>
+			<type>1</type>
+			<location>C:/Users/Armando/Desktop/Bootcamp Spring React - Capítulo 02.pdf</location>
+		</link>
+	</linkedResources>
 </projectDescription>
