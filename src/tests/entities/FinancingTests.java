@@ -9,10 +9,7 @@ public class FinancingTests {
 
 	@Test
 	public void constructorShouldCreateObjectWhenValidData() {
-		//arrange
-		//action
 		Financing fin = new Financing(100000.0, 2000.0, 80);
-		//assert
 		Assertions.assertEquals(fin.getTotalAmount(), 100000.00);
 		Assertions.assertEquals(fin.getIncome(), 2000.00);
 		Assertions.assertEquals(fin.getMonths(), 80);
@@ -27,11 +24,8 @@ public class FinancingTests {
 	
 	@Test
 	public void setTotalAmountShouldSetDataWhenValidData() {
-		//arrange
-		//action
 		Financing fin = new Financing(100000.0, 2000.0, 80);
 		fin.setTotalAmount(90000.0);
-		//assert
 		Assertions.assertEquals(fin.getTotalAmount(), 90000.00);
 	}
 	
@@ -39,17 +33,14 @@ public class FinancingTests {
 	public void setTotalAmountShouldThrowIllegalArgumentExceptionWhenInvalidData() {
 		Assertions.assertThrows(IllegalArgumentException.class, ()-> {
 			Financing fin = new Financing(100000.0, 2000.0, 80);
-			fin.setTotalAmount(110000.0);
+			fin.setTotalAmount(200000.0);
 		});
 	}
 	
 	@Test
 	public void setIncomeShouldSetDataWhenValidData() {
-		//arrange
-		//action
 		Financing fin = new Financing(100000.0, 2000.0, 80);
 		fin.setIncome(3000.0);
-		//assert
 		Assertions.assertEquals(fin.getIncome(), 3000.00);
 	}
 	
@@ -63,11 +54,8 @@ public class FinancingTests {
 	
 	@Test
 	public void setMonthsShouldSetDataWhenValidData() {
-		//arrange
-		//action
 		Financing fin = new Financing(100000.0, 2000.0, 80);
 		fin.setMonths(90);
-		//assert
 		Assertions.assertEquals(fin.getMonths(), 90);
 	}
 	
